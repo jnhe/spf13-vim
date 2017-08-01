@@ -291,6 +291,8 @@
             Bundle 'cespare/vim-toml'
             Bundle 'quentindecock/vim-cucumber-align-pipes'
             Bundle 'saltstack/salt-vim'
+            Bundle 'JuliaEditorSupport/julia-vim'
+            Bundle 'vim-perl/vim-perl'
         endif
     " }
 
