@@ -293,6 +293,7 @@
             Bundle 'saltstack/salt-vim'
             Bundle 'JuliaEditorSupport/julia-vim'
             Bundle 'vim-perl/vim-perl'
+            Bundle 'pboettch/vim-cmake-syntax'
         endif
     " }
 
