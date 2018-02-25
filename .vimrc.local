@@ -1,0 +1,38 @@
+set textwidth=80
+set colorcolumn=+1
+
+set nospell
+set whichwrap=
+set nofoldenable
+set mouse=
+set wrap
+set linebreak
+
+hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+
+autocmd VimEnter,Colorscheme * :hi Normal ctermbg=none
+autocmd VimEnter,Colorscheme * :hi NonText ctermbg=none
+colorscheme peaksea
+set background=dark
+let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=grey
+" autocmd VimEnter,Colorscheme * :hi Normal ctermbg=none
+" autocmd VimEnter,Colorscheme * :hi NonText ctermbg=none
+autocmd VimEnter,Colorscheme * :hi ColorColumn ctermbg=241
+autocmd BufWritePre *.* :%s/\s\+$//e
+autocmd FileType c set tags+=~/.cctags,~/.ctags.sys,~/.tags_gl
+autocmd FileType cpp set tags+=~/.cxx_tags,~/.tags_gl,~/.tags.usr.include,~/.tags.usr.include.sys
+autocmd FileType perl setlocal equalprg=perltidy\ -st\ -act=2\ -nsfs\ -nolq
+autocmd BufNewFile,BufRead *.scm set filetype=lisp
+autocmd BufNewFile,BufRead CMakeLists.txt,*.cmake set filetype=cmake
+
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,latin1
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set expandtab
