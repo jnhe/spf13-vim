@@ -28,6 +28,7 @@ autocmd FileType cpp set tags+=~/.cxx_tags,~/.tags_gl,~/.tags.usr.include,~/.tag
 autocmd FileType perl setlocal equalprg=perltidy\ -st\ -act=2\ -nsfs\ -nolq
 " autocmd BufNewFile,BufRead *.scm set filetype=racket
 autocmd BufNewFile,BufRead CMakeLists.txt,*.cmake set filetype=cmake
+autocmd BufNewFile,BufRead *.rs setlocal softtabstop=4 shiftwidth=4 tabstop=4
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
