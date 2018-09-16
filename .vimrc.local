@@ -28,12 +28,14 @@ autocmd FileType cpp set tags+=~/.cxx_tags,~/.tags_gl,~/.tags.usr.include,~/.tag
 autocmd FileType perl setlocal equalprg=perltidy\ -st\ -act=2\ -nsfs\ -nolq
 " autocmd BufNewFile,BufRead *.scm set filetype=racket
 autocmd BufNewFile,BufRead CMakeLists.txt,*.cmake RainbowToggle
-autocmd BufNewFile,BufRead *.rs setlocal softtabstop=4 shiftwidth=4 tabstop=4
+" autocmd BufNewFile,BufRead *.rs setlocal softtabstop=4 shiftwidth=4 tabstop=4
+
+map <leader>net :NERDTreeToggle<CR>
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
+" set softtabstop=2
+" set shiftwidth=2
+" set tabstop=2
 set expandtab
