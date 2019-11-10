@@ -1,3 +1,13 @@
 UnBundle 'luochen1990/rainbow'
-Bundle 'mkitt/tabline.vim'
-Bundle 'wlangstroth/vim-racket'
+" Bundle 'mkitt/tabline.vim'
+" Bundle 'wlangstroth/vim-racket'
+UnBundle 'tpope/vim-cucumber'
+UnBundle 'quentindecock/vim-cucumber-align-pipes'
+UnBundle 'rust-lang/rust.vim'
+
+" CMake {
+    if count(g:spf13_bundle_groups, 'CMake')
+        Bundle 'pboettch/vim-cmake-syntax'
+        Bundle 'vhdirk/vim-cmake'
+    endif
+" }

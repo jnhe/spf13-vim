@@ -1,18 +1,12 @@
-let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'python', 'misc']
+let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'python', 'misc', 'CMake', 'go']
 let pf13_no_wrapRelMotion = 1
 let g:spf13_no_restore_cursor = 1
 let g:syntastic_cpp_compiler_options = '-std=c++17'
 let g:syntastic_python_python_exec = '/bin/python'
 " let g:syntastic_asm_compiler_options = "-32"
 
-" 颜色重新设置
-" let g:override_spf13_bundles = 1
-
 " rust style keep your style
 let g:rust_recommended_style = 0
-
-" no rainbow
-let g:rainbow_active = 0
 
 " airline
 let g:tablineclosebutton=1
@@ -20,7 +14,6 @@ let g:spf13_use_powerline = 1
 " let g:airline#extensions#tabline#enabled = 1
 
 autocmd Filetype cpp let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_files/cpp/.ycm_extra_conf.py'
-
 autocmd Filetype c let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_files/c/.ycm_extra_conf.py'
 
 " auto load ycm_extra_conf.py no confirm
@@ -50,4 +43,3 @@ let g:NERDAltDelims_java = 1
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-
