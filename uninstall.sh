@@ -14,5 +14,14 @@ die() {
 rm $HOME/.vimrc
 rm $HOME/.vimrc.bundles
 rm $HOME/.vim
+rm $HOME/.vimrc.before
+rm $HOME/.vimrc.before.fork
+rm $HOME/.vimrc.before.local
+rm $HOME/.vimrc.bundles
+rm $HOME/.vimrc.bundles.default
+rm $HOME/.vimrc.bundles.fork
+rm $HOME/.vimrc.bundles.local
+rm $HOME/.vimrc.fork
+rm $HOME/.vimrc.local
 
 rm -rf $app_dir
