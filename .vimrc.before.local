@@ -1,5 +1,5 @@
 let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'python', 'misc', 'CMake', 'go']
-let pf13_no_wrapRelMotion = 1
+" let spf13_no_wrapRelMotion = 1
 let g:spf13_no_restore_cursor = 1
 let g:syntastic_cpp_compiler_options = '-std=c++17'
 let g:syntastic_python_python_exec = '/bin/python'

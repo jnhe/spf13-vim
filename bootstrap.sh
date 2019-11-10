@@ -143,12 +143,14 @@ setup_fork_mode() {
     if [ "$1" -eq '1' ]; then
         touch "$target_path/.vimrc.fork"
         touch "$target_path/.vimrc.bundles.fork"
+        touch "$target_path/.vimrc.bundles.local"
         touch "$target_path/.vimrc.before.fork"
         touch "$target_path/.vimrc.local"
         touch "$target_path/.vimrc.before.local"
 
         lnif "$source_path/.vimrc.fork"         "$target_path/.vimrc.fork"
         lnif "$source_path/.vimrc.bundles.fork" "$target_path/.vimrc.bundles.fork"
+        lnif "$source_path/.vimrc.bundles.local" "$target_path/.vimrc.bundles.local"
         lnif "$source_path/.vimrc.before.fork"  "$target_path/.vimrc.before.fork"
         lnif "$source_path/.vimrc.local"        "$target_path/.vimrc.local"
         lnif "$source_path/.vimrc.before.local" "$target_path/.vimrc.before.local"

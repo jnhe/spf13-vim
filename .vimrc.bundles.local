@@ -6,8 +6,10 @@ UnBundle 'quentindecock/vim-cucumber-align-pipes'
 UnBundle 'rust-lang/rust.vim'
 
 " CMake {
-    if count(g:spf13_bundle_groups, 'CMake')
-        Bundle 'pboettch/vim-cmake-syntax'
-        Bundle 'vhdirk/vim-cmake'
+    if !exists("g:override_spf13_bundles")
+        if count(g:spf13_bundle_groups, 'CMake')
+            Bundle 'pboettch/vim-cmake-syntax'
+            Bundle 'vhdirk/vim-cmake'
+        endif
     endif
 " }

@@ -2,12 +2,11 @@ set textwidth=80
 set colorcolumn=+1
 
 set nospell
-set whichwrap=
 set nofoldenable
-" set mouse=
-" set wrap
-" set nolist
-" set linebreak
+set mouse=
+set nolist
+set wrap
+set linebreak
 
 " hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
 " hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
